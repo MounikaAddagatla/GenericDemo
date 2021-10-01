@@ -4,9 +4,9 @@ using System.Text;
 
 namespace GenericsUnitTest
 {
-    class MaxIntTest
+    class MaxDoubleTest
     {
-        public int Max(int a, int b, int c)
+        public double Max(double a, double b, double c)
         {
             if (a > b && a > c)
             {
