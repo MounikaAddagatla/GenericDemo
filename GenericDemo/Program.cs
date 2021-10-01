@@ -8,7 +8,7 @@ namespace GenericDemo
         {
             Console.WriteLine("Maximum Value");
             Generics<int> genericDemo = new Generics<int>();
-            genericDemo.MaximumOfNumber(20.1, 50.1, 25.1);
+            genericDemo.MaximumOfValue("Dell","Apple","Hp");
             Console.ReadLine();
         }
     }
