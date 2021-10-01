@@ -6,7 +6,7 @@ namespace GenericDemo
 {
     class Generics<T> where T : IComparable
     {
-        public void MaximumOfNumber(int firstValue, int secondValue, int thirdValue)
+        public void MaximumOfNumber(double firstValue, double secondValue, double thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
                 firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
