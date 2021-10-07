@@ -6,28 +6,28 @@ namespace GenericsUnitTest
     {
 
         [Test]
-        public void GivenMaxInFirstPositin_WhenMaxNumberCheck_ThenReturnMax()
+        public void GivenMaxInFirstPositin_WhenMaxStringCheck_ThenReturnMax()
         {
-            float a = 10.4f, b = 2f, c = 5f;
-            MaxDoubleTest maxOfNumber = new MaxDoubleTest();
-            var actual = maxOfNumber.Max(a, b, c);
-            Assert.AreEqual(a, actual);
+            string firstValue = "peach", secondValue = "apple", thirdValue = "banana";
+            MaxValueOfString maxOfNumber = new MaxValueOfString();
+            var actual = maxOfNumber.Max(firstValue, secondValue, thirdValue);
+            Assert.AreEqual(firstValue, actual);
         }
         [Test]
-        public void GivenMaxInSecondPositin_WhenMaxNumberCheck_ThenReturnMax()
+        public void GivenMaxInSecondPositin_WhenMaxStringCheck_ThenReturnMax()
         {
-            float a = 10f, b = 22.21f, c = 5.324f;
-            MaxDoubleTest maxOfNumber = new MaxDoubleTest();
-            var actual = maxOfNumber.Max(a, b, c);
-            Assert.AreEqual(b, actual);
+            string firstValue = "apple", secondValue = "peach", thirdValue = "banana";
+            MaxValueOfString maxOfNumber = new MaxValueOfString();
+            var actual = maxOfNumber.Max(firstValue, secondValue, thirdValue);
+            Assert.AreEqual(secondValue, actual);
         }
         [Test]
-        public void GivenMaxInThirdPositin_WhenMaxNumberCheck_ThenReturnMax()
+        public void GivenMaxInThirdPositin_WhenMaxStringCheck_ThenReturnMax()
         {
-            float a = 10.214f, b = 2.3983f, c = 55.213f;
-            MaxDoubleTest maxOfNumber = new MaxDoubleTest();
-            var actual = maxOfNumber.Max(a, b, c);
-            Assert.AreEqual(c, actual);
+            string firstValue = "apple", secondValue = "banana", thirdValue = "peach";
+            MaxValueOfString maxOfNumber = new MaxValueOfString();
+            var actual = maxOfNumber.Max(firstValue, secondValue, thirdValue);
+            Assert.AreEqual(thirdValue, actual);
         }
     }
 }
